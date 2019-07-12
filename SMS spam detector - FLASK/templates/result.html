@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMS Spam Detector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/styles.css">
+	<style type="text/css">
+		body{
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0px;
+	background-color:#f4f3f3;
+}
+
+header h2{
+	text-align:center;
+	color:#fff;
+
+}
+
+.btn-info {background-color: #2196F3;
+	height:40px;
+	width:100px;} /* Blue */
+.btn-info:hover {background: #0b7dda;}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #03A9F4;#35434a;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 450px; /* only for demonstration, should be removed */
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #ccc;
+  height: 450px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #03A9F4;#35434a;
+  padding: 10px;
+  color: white;
+  position: fixed;
+Width: 100%;
+bottom: 0;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+	</style>
+	<script>
+function goBack() {
+  window.history.back()
+}
+</script>
+</head>
+<body>
+<header>
+  <h2>Machine Learning App using Flask</h2>
+	<h2>Spam Detector For SMS Messages</h2>
+</header>
+	<p style="color:blue;font-size:30;text-align: left;"><b>Results for Comment</b></p>
+	<div class="results">
+
+	{% if prediction == 1%}
+	<h2 style="color:red;font-size:30;">Spam</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:Green;font-size:30;">Not a Spam (It is a Ham)</h2>
+	{% endif %}
+	</br>
+		<button onclick="goBack()">Go Back</button>
+	</div>
+<footer>
+	<table  style="width:100%;">
+		<tr>
+			<td style="float:left;">&copy; 2019 ms.dawood786@gmail.com</td>
+			<td style="float:right;"><a href="https://github.com/dawoodhussain/DataScience-ML"><i class="fa fa-github"></i>&nbsp; My Github</a></td>
+			<td style="float:right;"><a href="https://www.linkedin.com/in/dawoodhussain"><i class="fa fa-linkedin-square"></i>&nbsp; My Linkedin</a></td>
+		</tr>
+	</table>
+</footer>
+</body>
+</html>
