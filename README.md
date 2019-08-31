@@ -1,5 +1,5 @@
 # DataScience-ML - Learnings
-repository for data science, Machine Learning
+below are my learnings from the book [Hands-On Machine Learning with Scikit-Learn and TensorFlow](http://shop.oreilly.com/product/0636920052289.do)
 
 1. [Statistics Basics](https://github.com/dawoodhussain/DataScience-ML-Learning/blob/master/Statistics%20basics%20-%20using%20Python.ipynb)
 2. [Python Basics](https://github.com/dawoodhussain/DataScience-ML-Learning/blob/master/Python%20Basics%20-%20Chapter%201.ipynb)
